@@ -251,7 +251,7 @@ app.post('/upload', function (req, res) {
                 return res.status(500).send(err);
 
             QRCode.toFile(fileName, [{
-                data: `https://pdf-to-qr.herokuapp.com/upload/${vaqt}`,
+                data: `https://servis-bdu.herokuapp.com/upload/${vaqt}`,
                 mode: 'byte'
             }], (err, fff) => {
 
