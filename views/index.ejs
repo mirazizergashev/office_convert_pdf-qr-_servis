@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office to pdf</title>
+ <style>
+ body {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+      }
+      
+      #inp {
+        text-align: center;
+        margin: auto;
+      }
+ </style>  
+</head>
+<body>
+  <h1 style="margin-top: 50px; text-align: center; color: rgb(173, 11, 125);"><%= msg %>  </h1><br>
+    <h1 style="margin-top: 80px; text-align: center; color: blue;">Fayl yuklang!</h1><br>
+    <form target="_blank" action="/upload" method="POST" enctype="multipart/form-data" id="formacha">
+        
+        <input id="inp" style="color: brown; border-width: 50px;" required="true" name="file" type="file" accept="office/*"><br><br><br>
+        <input id="inp" style="color: darkblue; border-width: medium;" type="submit" value="Faylni jo'natish">
+      </form>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><hr>
+      😉Fayllar doc,docx,xls,xlsx,png,jpg,jpeg formatda qabul qilinadi. Qolgani qabul qilinmaydi.😉
+     
+      
+<script>
+document.getElementById('formacha').addEventListener('submit',(x)=>{
+            setTimeout(()=>{location.reload()},1000)
+        })
+ </script>
+</body>
+</html>

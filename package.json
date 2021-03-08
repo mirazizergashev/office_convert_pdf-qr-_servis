@@ -1,0 +1,24 @@
+{
+  "name": "pdf-to-qr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "new.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon new.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pdftron/pdfnet-node": "^8.1.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "html-pdf": "^2.2.0",
+    "hummus-recipe": "^2.0.0",
+    "nodemon": "^2.0.7",
+    "pdf-merger-js": "^3.1.0",
+    "qrcode": "^1.4.4"
+  }
+}
